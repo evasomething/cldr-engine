@@ -40,7 +40,7 @@
     "build:rollup": "NODE_ENV=production rollup -c && yarn build:rollup-dts && rimraf dist/src && yarn build:rollup-report",
     "build:rollup-report": "source-map-explorer --html -m dist/cldrengine.umd.js dist/cldrengine.umd.js.map >dist/report.html",
     "build:rollup-dts": "dts-bundle-generator -o ./dist/cldrengine.umd.d.ts src/index.ts",
-    "clean": "rimraf ./lib ./lib-es ./packs ./dist",
+    "clean": "rimraf ./.buildinfo ./lib ./lib-es ./packs ./dist",
     "clean:full": "yarn clean && rimraf ./node_modules",
     "coverage": "jest --coverage --runInBand --no-cache",
     "off-install": "node ./scripts/extract.js",

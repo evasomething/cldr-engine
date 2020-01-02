@@ -1,12 +1,20 @@
 {
   "extends": "../../tsconfig.settings.json",
+  "references": [
+    { "path": "../cldr-core" },
+    { "path": "../cldr-utils" },
+    { "path": "../messageformat" }
+  ],
   "compilerOptions": {
-    "outDir": "lib"
+    "outDir": "lib",
+    "rootDir": "src",
+    "tsBuildInfoFile": ".buildinfo"
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
+    "etc/**/*",
     "__tests__/**/*",
     "__stress__/**/*"
   ]

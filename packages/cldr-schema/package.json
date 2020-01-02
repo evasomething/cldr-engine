@@ -21,7 +21,7 @@
     "build:es": "tsc -p ./tsconfig.json --module esnext --outDir lib-es",
     "build:lint": "tsc -p ./tsconfig.lint.json",
     "build:watch": "tsc -p ./tsconfig.json -w --preserveWatchOutput",
-    "clean": "rimraf ./lib ./lib-es ./.scratch",
+    "clean": "rimraf ./.buildinfo ./lib ./lib-es ./.scratch",
     "clean:full": "yarn clean && rimraf ./node_modules",
     "coverage": "jest --coverage --runInBand --no-cache",
     "lint": "tslint -p ./tsconfig.lint.json",

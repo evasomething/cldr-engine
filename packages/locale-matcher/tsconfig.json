@@ -1,7 +1,13 @@
 {
   "extends": "../../tsconfig.settings.json",
+  "references": [
+    { "path": "../language-tag" },
+    { "path": "../locale" },
+  ],
   "compilerOptions": {
     "outDir": "lib",
+    "rootDir": "src",
+    "tsBuildInfoFile": ".buildinfo"
   },
   "include": [
     "src/**/*.ts"

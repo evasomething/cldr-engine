@@ -1,10 +1,22 @@
 {
   "extends": "../../tsconfig.settings.json",
+  "references": [
+    { "path": "../cldr-core" },
+    { "path": "../cldr-ext-rbnf" },
+    { "path": "../cldr-schema" },
+    { "path": "../cldr-types" },
+    { "path": "../cldr-utils" },
+    { "path": "../decimal" },
+    { "path": "../timezone" },
+  ],
   "compilerOptions": {
-    "outDir": "lib"
+    "outDir": "lib",
+    "rootDir": "src",
+    "tsBuildInfoFile": ".buildinfo"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.json"
   ],
   "exclude": [
     "__tests__/**/*"

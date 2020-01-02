@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "packages"
+  },
+  "include": [
+  ],
+  "references": [
+    { "path": "packages/cldr-types" },
+    { "path": "packages/decimal" },
+    { "path": "packages/cldr-utils" },
+    { "path": "packages/cldr-schema" },
+    { "path": "packages/cldr" },
+    { "path": "packages/cldr-compiler" },
+    { "path": "packages/cldr-core" },
+    { "path": "packages/cldr-ext-rbnf" },
+    { "path": "packages/locale" },
+    { "path": "packages/language-tag" },
+    { "path": "packages/locale-matcher" },
+    { "path": "packages/messageformat" },
+    { "path": "packages/plurals" },
+    { "path": "packages/timezone" },
+  ]
+}

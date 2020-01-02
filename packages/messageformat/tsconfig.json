@@ -1,7 +1,14 @@
 {
   "extends": "../../tsconfig.settings.json",
+  "references": [
+    { "path": "../cldr-utils" },
+    { "path": "../decimal" },
+    { "path": "../plurals" },
+  ],
   "compilerOptions": {
     "outDir": "lib",
+    "rootDir": "src",
+    "tsBuildInfoFile": ".buildinfo"
   },
   "include": [
     "src/**/*.ts"
