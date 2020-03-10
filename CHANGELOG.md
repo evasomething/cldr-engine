@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
+## [0.19.6]
+### Fixed/Changed
+- Correct handling of `Date` arguments to calendar methods.
+
 ## [0.19.5]
 ### Fixed/Changed
  - Upgrade to [tzdb 2019c](https://www.iana.org/time-zones)
@@ -265,6 +269,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 #### Fixed/Changed
 - Converted `CLDR` to an interface
 
+[0.19.6]: https://github.com/phensley/cldr-engine/compare/v0.19.5...v0.19.6
 [0.19.5]: https://github.com/phensley/cldr-engine/compare/v0.19.4...v0.19.5
 [0.19.4]: https://github.com/phensley/cldr-engine/compare/v0.19.3...v0.19.4
 [0.19.3]: https://github.com/phensley/cldr-engine/compare/v0.19.2...v0.19.3
